@@ -45,7 +45,7 @@ export default {
     hireable: true,
     gender: 'male',
     position: 'Software Developer',
-    avatar: () => require('./public/my-image.png'),
+    avatar: () => require('./public/profile-picture.png'),
   },
 
   // Here are the services from which you can automatically get the latest data
@@ -90,7 +90,7 @@ export default {
     default: {
       configuration: {
         githubRepositoriesMore: 2,
-        background: () => require('./public/background.png'),
+        background: () => require('./public/background-picture.png'),
       },
     },
   },
