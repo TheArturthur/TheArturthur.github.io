@@ -25,7 +25,7 @@ export default {
     },
   },
   data: {
-    position: 'PHP Developer',
+    position: 'Software Developer',
     links: [
       { name: 'github', url: 'https://github.com/TheArturthur' },
       { name: 'linkedin', url: 'https://www.linkedin.com/in/arturo-vidal-pe%C3%B1a-025a2aa3/' },
