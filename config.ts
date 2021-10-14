@@ -16,7 +16,7 @@ export default {
           repositories: [
             [
               { attr: 'owner.login', values: ['TheArturthur'] },
-              { attr: 'name', values: ['awesome-vue', 'merge-conflict', 'github-pages-with-jekyll', 'markdown-portfolio'], revert: true },
+              { attr: 'name', values: ['awesome-vue', 'merge-conflict', 'github-pages-with-jekyll', 'markdown-portfolio', 'TheArturthur'], revert: true },
               { attr: 'fork', values: false },
             ],
           ],
