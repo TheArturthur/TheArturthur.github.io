@@ -28,7 +28,8 @@ export default {
     position: 'PHP Developer',
     links: [
       { name: 'github', url: 'https://github.com/TheArturthur' },
-      { name: 'linkedin', url: 'https://linkedin.com/in/arturo-vidal-pena' },
+      { name: 'linkedin', url: 'https://www.linkedin.com/in/arturo-vidal-pe%C3%B1a-025a2aa3/' },
+      { name: 'twitter', url: 'https://twitter.com/TheArturthur' },
     ],
   },
   templates: {
