@@ -24,8 +24,8 @@ export default class GithubDataAdapter implements IConfigData {
     return this.profile.avatar_url || '';
   }
 
-  get bio(): string {
-    return this.profile.bio || '';
+  get bio(): string[] {
+    return [this.profile.bio] || [''];
   }
 
   get company(): string {
