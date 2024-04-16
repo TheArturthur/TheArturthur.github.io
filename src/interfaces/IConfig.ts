@@ -35,7 +35,7 @@ export interface IConfigData {
   login: string
   first_name: string
   last_name: string
-  bio: string
+  bio: string[]
   avatar: (() => string) | string
   gender: string
   position: string

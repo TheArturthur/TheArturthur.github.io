@@ -54,10 +54,11 @@ export default {
   data: {
     first_name: 'Arturo',
     last_name: 'Vidal',
-    bio: `Software Developer & Devops enthusiast.
-    I manage a homelab cluster as sysAdmin, monitoring and issue-resolver for friends and family using it.
-    I'm currently learning Kubernetes and preparing both the PCAP (Certified Associate Python Programmer) 
-    and RHCSA (Red Hat Certified System Administrator) certifications.`,
+    bio: ["Software Developer & Devops enthusiast.",
+          "I manage a homelab cluster as sysAdmin, monitoring and issue-resolver for friends and family using it.",
+          "I'm currently learning Kubernetes and preparing both the PCAP (Certified Associate Python Programmer)",
+          "and RHCSA (Red Hat Certified System Administrator) certifications."
+    ],
     position: 'Functional Analyst',
     company: 'MSX International TechServices S.L.',
     location: 'Madrid (Spain)',
