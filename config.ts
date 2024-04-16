@@ -7,7 +7,7 @@ export default {
         nickname: 'TheArturthur',
         sort: {
           repositories: [
-            { attr: 'created_at', sortByDesc: true },
+            { attr: 'created_at', sortByDesc: false },
             { attr: 'forks_count', sortByDesc: true },
             { attr: 'stargazers_count', sortByDesc: true },
           ],
@@ -17,7 +17,7 @@ export default {
             [
               { attr: 'owner.login', values: ['TheArturthur'] },
               { attr: 'name', values: ['awesome-vue', 'merge-conflict', 'github-pages-with-jekyll', 'markdown-portfolio', 'TheArturthur'], revert: true },
-              { attr: 'fork', values: false },
+              { attr: 'fork', values: true },
             ],
           ],
         },
@@ -25,7 +25,7 @@ export default {
     },
   },
   data: {
-    position: 'Software Developer',
+    position: 'Software Developer & DevOps Engineer',
     links: [
       { name: 'github', url: 'https://github.com/TheArturthur' },
       { name: 'linkedin', url: 'https://www.linkedin.com/in/arturo-vidal-pe%C3%B1a-025a2aa3/' },
