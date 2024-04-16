@@ -76,9 +76,6 @@ function generateRepositoriesHtml(repositories) {
     <% if (config.data.location) { %>
       <span class="header__wrap__position"><%= config.data.location %></span>
     <% } %>
-    <% if (config.data.hireable) { %>
-      <span class="header__wrap__position"><%= config.data.hireable %></span>
-    <% } %>
     <% if (config.data.links.length > 0) { %>
       <div class="header__wrap__social">
         <% for (const link of config.data.links) { %>
