@@ -52,6 +52,13 @@
       font-size: 1.3rem;
       font-weight: bold;
     }
+    &__bio {
+      display: inline-block;
+      margin-top: 20px;
+      color: rgba(255, 255, 255, .95);
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
     &__social {
       display: flex;
       flex-wrap: wrap;

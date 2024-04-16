@@ -10,7 +10,7 @@ export default {
         nickname: 'TheArturthur',
         fetcher: {
           repositories: {
-            type: 'public'
+            type: 'all'
           }
         },
         sort: {
