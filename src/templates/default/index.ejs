@@ -65,13 +65,14 @@ function generateRepositoriesHtml(repositories) {
     <div class="header__wrap__image avatar--image"></div>
     <h1 class="header__wrap__name"><%= `${config.data.first_name} ${config.data.last_name}` %></h1>
     <% if (config.data.bio) { %>
-      <span class="header__wrap__position multiline"><%= config.data.bio %></span>
+      <p class="header__wrap__position"><%= config.data.bio %></p>
     <% } %>
     <% if (config.data.position) { %>
-      <span class="header__wrap__position"><%= config.data.position %></span>
-    <% } %>
-    <% if (config.data.company) { %>
-      <span class="header__wrap__position"> @ <%= config.data.company %></span>
+      <span class="header__wrap__position">Currently, I'm a <%= config.data.position %> 
+        <% if (config.data.company) { %>
+          @ <%= config.data.company %></span>
+        <% } %>
+      </span>
     <% } %>
     <% if (config.data.location) { %>
       <span class="header__wrap__position"><%= config.data.location %></span>
