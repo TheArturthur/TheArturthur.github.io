@@ -68,7 +68,7 @@ export default {
   templates: {
     default: {
       configuration: {
-        githubRepositoriesMore: 0,
+        githubRepositoriesMore: 10,
         background: () => require('./public/background-picture.png'),
       },
       info: {

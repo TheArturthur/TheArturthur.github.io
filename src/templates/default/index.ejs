@@ -47,6 +47,7 @@ function generateRepositoriesHtml(repositories) {
 
 <html <%= require('../_common/templates/html-attributes.ejs')({ templateName: 'default' }) %>>
 <head>
+  <title>Portfolio</title>
   <%= require('../_common/templates/header/full.ejs')() %>
   <style>
     .avatar--image {
@@ -63,10 +64,20 @@ function generateRepositoriesHtml(repositories) {
   <div class="header__wrap">
     <div class="header__wrap__image avatar--image"></div>
     <h1 class="header__wrap__name"><%= `${config.data.first_name} ${config.data.last_name}` %></h1>
-    <% for (const info of config.data) { %>
-      <% if (info != config.data.links) { %>
-        <span class="header__wrap__position"><%= info %></span>
-      <% } %>
+    <% if (config.data.bio) { %>
+      <span class="header__wrap__position"><%= config.data.bio %></span>
+    <% } %>
+    <% if (config.data.position) { %>
+      <span class="header__wrap__position"><%= config.data.position %></span>
+    <% } %>
+    <% if (config.data.company) { %>
+      <span class="header__wrap__position"> @ <%= config.data.company %></span>
+    <% } %>
+    <% if (config.data.location) { %>
+      <span class="header__wrap__position"><%= config.data.location %></span>
+    <% } %>
+    <% if (config.data.hireable) { %>
+      <span class="header__wrap__position"><%= config.data.hireable %></span>
     <% } %>
     <% if (config.data.links.length > 0) { %>
       <div class="header__wrap__social">
