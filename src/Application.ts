@@ -119,7 +119,7 @@ export default class Application implements IApplication {
       login: '',
       first_name: '',
       last_name: '',
-      bio: '',
+      bio: [],
       avatar: '',
       gender: '',
       position: '',
