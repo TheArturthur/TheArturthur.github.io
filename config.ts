@@ -10,7 +10,9 @@ export default {
         nickname: 'TheArturthur',
         fetcher: {
           repositories: {
-            type: 'all'
+            type: 'all',
+            visibility: 'public',
+            affiliation: ['owner', 'collaborator', 'organization_member']
           }
         },
         sort: {
@@ -23,7 +25,7 @@ export default {
         filter: {
           repositories: [
             [
-              { attr: 'owner.login', values: ['TheArturthur'] },
+              { attr: 'owner.login', values: ['TheArturthur', 'excludarr'] },
               { attr: 'name', values: [
                 'awesome-vue', 
                 'merge-conflict', 
@@ -61,6 +63,7 @@ export default {
     ],
     position: 'Functional Analyst',
     company: 'MSX International TechServices S.L.',
+    hireable: true,
     location: 'Madrid (Spain)',
     links: [
       { name: 'github', url: 'https://github.com/TheArturthur' },
